@@ -26,6 +26,8 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+This is a library to solve all the crashes due to Parse's (arguably) poor handling of `nil`s.
+It wraps `PFObject` & co. to always check for `nil`, before passing them over to Parse.
                    DESC
 
   s.homepage     = "https://github.com/guaranatech/GRNPFObject"
@@ -133,6 +135,6 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+    s.dependency "Parse"
 
 end

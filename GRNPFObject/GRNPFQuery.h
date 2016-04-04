@@ -4,7 +4,7 @@
 //  Copyright © 2016 Guaraná Technologies. All rights reserved.
 //
 
-@class PFQuery;
+#import <Parse/Parse.h>
 
 @interface GRNPFQuery : PFQuery
 

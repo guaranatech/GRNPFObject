@@ -5,7 +5,6 @@
 //
 
 #import "GRNPFQuery.h"
-#import <Parse/Parse.h>
 
 
 @implementation GRNPFQuery
