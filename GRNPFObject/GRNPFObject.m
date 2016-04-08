@@ -18,7 +18,7 @@
     if (object == nil) {
         object = [NSNull null];
     }
-    [self _setObject:object forKey:key onlyIfDifferent:NO];
+    [super _setObject:object forKey:key onlyIfDifferent:NO];
 }
 
 @end

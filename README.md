@@ -51,3 +51,14 @@ If you don't like subclassing `PFObject` (I hear you, my friend), then this libr
 ```
 PFQuery *query = [PFSafeQuery queryWithClassName:@"Comment"];
 ```
+
+### NSInvalidArgumentException: Can't use nil for keys or values on PFObject. Use NSNull for values.
+
+#### Problem
+
+You will get this crash when you are trying to insert a `nil` into one of your `PFObject`. This can happen, for example, when you are expecting a `facebook_id`, but you don't get one.
+
+#### Solution
+
+No need to do anything. Your `nil` will be converted into `[NSNull null]`. This will show up as `undefined` in your Parse table.
+
