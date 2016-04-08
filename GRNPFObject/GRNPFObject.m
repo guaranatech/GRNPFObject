@@ -18,7 +18,14 @@
     if (object == nil) {
         object = [NSNull null];
     }
-    [super _setObject:object forKey:key onlyIfDifferent:NO];
+    [super setObject:object forKey:key];
+}
+
+- (void)setObject:(id)object forKeyedSubscript:(NSString *)key {
+    if (object == nil) {
+        object = [NSNull null];
+    }
+    [super setObject:object forKeyedSubscript:key];
 }
 
 @end
