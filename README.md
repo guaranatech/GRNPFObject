@@ -45,3 +45,9 @@ When subclassing your `PFObject`, sublass `GRNPFObject` instead.
 
 ```
 Don't forget to import the headers.
+
+If you don't like subclassing `PFObject` (I hear you, my friend), then this library will work as long as you use `PFSafeQuery`:
+
+```
+PFQuery *query = [PFSafeQuery queryWithClassName:@"Comment"];
+```
