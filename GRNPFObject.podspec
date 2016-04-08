@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GRNPFObject"
-  s.version      = "0.0.1"
-  s.summary      = "This is a library to solve all the crashes due to Parse's (arguably) poor handling of `nil`s."
+  s.version      = "0.0.2"
+  s.summary      = "This is a drop-in library to solve all the crashes due to Parse's (arguably) poor handling of `nil`s."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -82,7 +82,7 @@ It wraps `PFObject` & co. to always check for `nil`, before passing them over to
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-    s.source       = { :git => "https://github.com/guaranatech/GRNPFObject.git", :tag => "0.0.1" }
+    s.source       = { :git => "https://github.com/guaranatech/GRNPFObject.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
