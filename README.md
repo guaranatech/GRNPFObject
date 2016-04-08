@@ -7,7 +7,7 @@ It wraps `PFObject` & co. to always check for `nil`, before passing them over to
 
 ## Installation 
 
-* Cocoapods
+### Cocoapods
 
 ```
 pod 'GRNPFObject', '~> 0.0.1'
@@ -15,7 +15,7 @@ pod 'GRNPFObject', '~> 0.0.1'
 
 [Click here](https://guides.cocoapods.org/using/getting-started.html) more information about cocoapods and how to install it 
 
-* Manual
+### Manual
 
 Drag the folder GRNPFObject into your project.
 
@@ -45,3 +45,9 @@ When subclassing your `PFObject`, sublass `GRNPFObject` instead.
 
 ```
 Don't forget to import the headers.
+
+If you don't like subclassing `PFObject` (I hear you, my friend), then this library will work as long as you use `PFSafeQuery`:
+
+```
+PFQuery *query = [PFSafeQuery queryWithClassName:@"Comment"];
+```
