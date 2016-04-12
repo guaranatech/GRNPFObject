@@ -10,7 +10,7 @@ It wraps `PFObject` & co. to always check for `nil`, before passing them over to
 ### Cocoapods
 
 ```
-pod 'GRNPFObject', '~> 0.0.1'
+pod 'GRNPFObject', '~> 0.0.3'
 ```
 
 [Click here](https://guides.cocoapods.org/using/getting-started.html) more information about cocoapods and how to install it 
