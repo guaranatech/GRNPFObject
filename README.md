@@ -60,5 +60,5 @@ You will get this crash when you are trying to insert a `nil` into one of your `
 
 #### Solution
 
-No need to do anything. Your `nil` will be converted into `[NSNull null]`. This will show up as `undefined` in your Parse table.
+Same solution as before: subclass `GRNPFObject`. Your `nil` will auto-magically be converted into `[NSNull null]`. This will show up as `undefined` in your Parse table.
 
